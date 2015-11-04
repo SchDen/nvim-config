@@ -101,16 +101,6 @@ set synmaxcol=240                       " No syntax highlighting on long lines.
 "------------------------------------------------
 
 "------------------------------------------------
-" AUTO COMMAND
-"------------------------------------------------
-if has('autocmd')
-
-endif
-"------------------------------------------------
-" /AUTO COMMAND
-"------------------------------------------------
-
-"------------------------------------------------
 " BASE BINDS
 "------------------------------------------------
 " Copy in system bufer
@@ -203,8 +193,50 @@ autocmd FileType javascript,php,python autocmd BufWritePre <buffer> :call <SID>S
 "------------------------------------------------
 
 "------------------------------------------------
+" INCLUDE PLUGINS
+"------------------------------------------------
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+"--- Initialize
+set rtp+=~/.config/nvim/bundle/Vundle.vim
+call vundle#begin()
+
+
+
+"--- VundleVim
+Plugin 'VundleVim/Vundle.vim'
+
+"--- The NERD Tree
+" https://github.com/scrooloose/nerdtree
+Plugin 'scrooloose/nerdtree'
+
+
+"--- End initialize
+call vundle#end()
+filetype plugin indent on
+"------------------------------------------------
+" /INCLUDE PLUGINS
+"------------------------------------------------
+
+
+
+"------------------------------------------------
+" /PLUGIN SETTINGS
+"------------------------------------------------
+
+"--- The NERD Tree
+source ~/.config/nvim/config/nerdtree.vim
+
+"------------------------------------------------
+" /PLUGIN SETTINGS
+"------------------------------------------------
+
+
+"------------------------------------------------
 " ABBRS
 "------------------------------------------------
 "------------------------------------------------
 " /ABBRS
 "------------------------------------------------
+
