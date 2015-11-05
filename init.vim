@@ -2,8 +2,9 @@
 " BASE SETTINGS
 "------------------------------------------------  
 syntax enable
-set background=dark
 set path=$PWD/**
+
+
 
 " Disable beep
 set noerrorbells visualbell t_vb=
@@ -40,14 +41,15 @@ set list listchars=tab:⋮\ ,trail:·
 "------------------------------------------------
 " THEME
 "------------------------------------------------
-let g:molokai_original = 1
-" Set fonts
-if has("gui_macvim")
-    set guifont=Meslo\ LG\ S\ DZ\ for\ Powerline:h13
-else
-    set guifont=Meslo\ LG\ S\ DZ\ for\ Powerline\ 11
-endif
-
+set t_Co=256
+set guifont=Inconsolata\ for\ Powerline:h15
+let g:Powerline_symbols = 'fancy'
+set encoding=utf-8
+set termencoding=utf-8<Paste>
+let base16colorspace=255
+colorscheme base16-twilight
+set synmaxcol=240                       " No syntax highlighting on long lines.
+set background=dark
 set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
@@ -85,17 +87,6 @@ if exists('+colorcolumn')
 else
   au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>100v.\+', -1)
 endif
-
-" THEME
-let base16colorspace=256
-set background=dark
-if has('gui_running')
-    colorscheme twilight
-else 
-    colorscheme base16-default
-endif
-
-set synmaxcol=240                       " No syntax highlighting on long lines.
 "------------------------------------------------
 " /THEME
 "------------------------------------------------
@@ -202,7 +193,8 @@ filetype off                  " required
 set rtp+=~/.config/nvim/bundle/Vundle.vim
 call vundle#begin()
 
-
+"--- POWERLINE
+Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/nvim/'}
 
 "--- VundleVim
 Plugin 'VundleVim/Vundle.vim'
@@ -210,6 +202,10 @@ Plugin 'VundleVim/Vundle.vim'
 "--- The NERD Tree
 " https://github.com/scrooloose/nerdtree
 Plugin 'scrooloose/nerdtree'
+
+"--- vim-airline
+" https://github.com/bling/vim-airline
+Plugin 'bling/vim-airline'
 
 
 "--- End initialize
@@ -227,6 +223,8 @@ filetype plugin indent on
 
 "--- The NERD Tree
 source ~/.config/nvim/config/nerdtree.vim
+"--- vim-airline
+source ~/.config/nvim/config/vim-airline.vim
 
 "------------------------------------------------
 " /PLUGIN SETTINGS
