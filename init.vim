@@ -203,11 +203,17 @@ Plugin 'VundleVim/Vundle.vim'
 " https://github.com/scrooloose/nerdtree
 Plugin 'scrooloose/nerdtree'
 
-"--- fugitive.vim
-" https://github.com/tpope/vim-fugitive
+"--- vim-fugitive
+" https://github.com/bling/vim-airline
 Plugin 'bling/vim-airline'
 
+"--- fugitive.vim
+" https://github.com/tpope/vim-fugitive
 Plugin 'tpope/vim-fugitive'
+
+"--- syntastic
+" https://github.com/scrooloose/syntastic
+Plugin 'scrooloose/syntastic'
 
 "--- End initialize
 call vundle#end()
@@ -226,6 +232,8 @@ filetype plugin indent on
 source ~/.config/nvim/config/nerdtree.vim
 "--- vim-airline
 source ~/.config/nvim/config/vim-airline.vim
+"--- syntastic
+source ~/.config/nvim/config/syntastic.vim
 
 "------------------------------------------------
 " /PLUGIN SETTINGS
