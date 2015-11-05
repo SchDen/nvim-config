@@ -1,3 +1,6 @@
+" For js:
+" sudo npm i -g jshint
+
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
