@@ -203,10 +203,11 @@ Plugin 'VundleVim/Vundle.vim'
 " https://github.com/scrooloose/nerdtree
 Plugin 'scrooloose/nerdtree'
 
-"--- vim-airline
-" https://github.com/bling/vim-airline
+"--- fugitive.vim
+" https://github.com/tpope/vim-fugitive
 Plugin 'bling/vim-airline'
 
+Plugin 'tpope/vim-fugitive'
 
 "--- End initialize
 call vundle#end()
