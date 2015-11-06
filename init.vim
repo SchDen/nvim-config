@@ -165,7 +165,7 @@ function! SuperCleverTab()
 endfunction
 
 inoremap <Tab> <C-R>=SuperCleverTab()<cr>
-"--- Автодополнение на Tab
+"--- /Автодополнение на Tab
 
 "--- Удаление лидирующих пробелов
 fun! <SID>StripTrailingWhitespaces()
@@ -176,7 +176,7 @@ fun! <SID>StripTrailingWhitespaces()
 endfun
 
 autocmd FileType javascript,php,python autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
-"--- Удаление лидирующих пробелов
+"--- /Удаление лидирующих пробелов
 
 "------------------------------------------------
 " /Functions
@@ -214,13 +214,20 @@ Plugin 'tpope/vim-fugitive'
 " https://github.com/scrooloose/syntastic
 Plugin 'scrooloose/syntastic'
 
+"--- Miscellaneous auto-load Vim scripts
+" https://github.com/xolox/vim-misc
+Plugin 'xolox/vim-misc'
+
+"--- Extended session management for Vim
+" https://github.com/xolox/vim-session
+Plugin 'xolox/vim-session'
+
 "--- End initialize
 call vundle#end()
 filetype plugin indent on
 "------------------------------------------------
 " /INCLUDE PLUGINS
 "------------------------------------------------
-
 
 
 "------------------------------------------------
@@ -233,6 +240,8 @@ source ~/.config/nvim/config/nerdtree.vim
 source ~/.config/nvim/config/vim-airline.vim
 "--- syntastic
 source ~/.config/nvim/config/syntastic.vim
+"--- vim-session
+source ~/.config/nvim/config/vim-session.vim
 
 "------------------------------------------------
 " /PLUGIN SETTINGS
