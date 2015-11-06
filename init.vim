@@ -4,8 +4,6 @@
 syntax enable
 set path=$PWD/**
 
-
-
 " Disable beep
 set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
@@ -94,6 +92,7 @@ endif
 "------------------------------------------------
 " BASE BINDS
 "------------------------------------------------
+
 " Copy in system bufer
 nnoremap y "+y
 vnoremap y "+y
