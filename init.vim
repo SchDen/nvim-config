@@ -222,6 +222,10 @@ Plugin 'xolox/vim-misc'
 " https://github.com/xolox/vim-session
 Plugin 'xolox/vim-session'
 
+"--- Emmet-vim
+" https://github.com/mattn/emmet-vim
+Plugin 'mattn/emmet-vim'
+
 "--- End initialize
 call vundle#end()
 filetype plugin indent on
@@ -242,6 +246,8 @@ source ~/.config/nvim/config/vim-airline.vim
 source ~/.config/nvim/config/syntastic.vim
 "--- vim-session
 source ~/.config/nvim/config/vim-session.vim
+"--- emmet-vim
+source ~/.config/nvim/config/emmet-vim.vim
 
 "------------------------------------------------
 " /PLUGIN SETTINGS
