@@ -202,7 +202,7 @@ Plugin 'VundleVim/Vundle.vim'
 " https://github.com/scrooloose/nerdtree
 Plugin 'scrooloose/nerdtree'
 
-"--- vim-fugitive
+"--- vim-airline
 " https://github.com/bling/vim-airline
 Plugin 'bling/vim-airline'
 
