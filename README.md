@@ -26,7 +26,7 @@ Config for [Neovim](https://github.com/neovim/neovim)
 - [Install Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
 - Clone config:
 ```
-$ mkdir ~/.config`
+$ mkdir ~/.config
 $ cd ~/.config
 $ git clone https://github.com/SchDen/nvim-config nvim
 ```
