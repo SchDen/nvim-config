@@ -22,7 +22,7 @@ Config for [Neovim](https://github.com/neovim/neovim)
 - [Emmet-vim](https://github.com/mattn/emmet-vim)
 
 
-#### Install 
+# Install 
 - [Install Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
 - Clone config:
 ```
