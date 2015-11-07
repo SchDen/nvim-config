@@ -22,15 +22,22 @@ Config for [Neovim](https://github.com/neovim/neovim)
 - [Emmet-vim](https://github.com/mattn/emmet-vim)
 
 
-#### Install 
-* [Install Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
-* Clone config:
- 
-`$ mkdir ~/.config && cd ~/.config` 
+# Install 
+- [Install Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
+- Clone config:
+```
+$ mkdir ~/.config
+$ cd ~/.config
+$ git clone https://github.com/SchDen/nvim-config nvim
+```
+- [Install powerline fonts](https://powerline.readthedocs.org/en/latest/installation.html)
+- Set settings for you terminal font size and e.t.c.
 
-`$ git clone https://github.com/SchDen/nvim-config nvim`
-* [Install powerline fonts](https://powerline.readthedocs.org/en/latest/installation.html)
-* Set settings for you terminal (for iTerm2 you can use com.googlecode.iterm2.plist - from repository)
-* Run nvim and install plugins:
+For iTerm2 you can use my com.googlecode.iterm2.plist - from repository. (make dump before use).
+
+`$ cp ~/.config/nvim/com.googlecode.iterm2.plist ~/Library/Preferences/`
+
+Maybe you need import [color presets](https://github.com/chriskempson/base16-iterm2) for change colorsheme. ([See preview](http://chriskempson.github.io/base16))
+- Run nvim and install plugins:
 
 `:PluginInstall`
