@@ -230,6 +230,11 @@ Plugin 'mattn/emmet-vim'
 " https://github.com/heavenshell/vim-jsdoc
 Plugin 'heavenshell/vim-jsdoc'
 
+"--- nerdcommenter
+" https://github.com/scrooloose/nerdcommenter
+Plugin 'scrooloose/nerdcommenter'
+
+
 "--- End initialize
 call vundle#end()
 filetype plugin indent on
@@ -254,6 +259,8 @@ source ~/.config/nvim/config/vim-session.vim
 source ~/.config/nvim/config/emmet-vim.vim
 "--- jsdoc.vim
 source ~/.config/nvim/config/jsdoc.vim
+"--- nerdcommenter
+source ~/.config/nvim/config/nerdcommenter.vim
 
 "------------------------------------------------
 " /PLUGIN SETTINGS
