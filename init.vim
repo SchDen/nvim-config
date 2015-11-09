@@ -226,6 +226,10 @@ Plugin 'xolox/vim-session'
 " https://github.com/mattn/emmet-vim
 Plugin 'mattn/emmet-vim'
 
+"--- jsdoc.vim
+" https://github.com/heavenshell/vim-jsdoc
+Plugin 'heavenshell/vim-jsdoc'
+
 "--- End initialize
 call vundle#end()
 filetype plugin indent on
@@ -248,6 +252,8 @@ source ~/.config/nvim/config/syntastic.vim
 source ~/.config/nvim/config/vim-session.vim
 "--- emmet-vim
 source ~/.config/nvim/config/emmet-vim.vim
+"--- jsdoc.vim
+source ~/.config/nvim/config/jsdoc.vim
 
 "------------------------------------------------
 " /PLUGIN SETTINGS
