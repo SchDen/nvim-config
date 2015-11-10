@@ -29,6 +29,7 @@ Config for [Neovim](https://github.com/neovim/neovim)
 $ mkdir ~/.config
 $ cd ~/.config
 $ git clone https://github.com/SchDen/nvim-config nvim
+$ git submodule update --init
 ```
 - [Install powerline fonts](https://powerline.readthedocs.org/en/latest/installation.html)
 - Set settings for you terminal font size and e.t.c.
