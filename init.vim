@@ -93,9 +93,9 @@ endif
 " BASE BINDS
 "------------------------------------------------
 
-" Copy in system bufer
-nnoremap y "+y
-vnoremap y "+y
+" @TODO - Copy in system bufer
+"nnoremap y "+y
+"vnoremap y "+y
 " /
 
 " Tab/Shift + tab
