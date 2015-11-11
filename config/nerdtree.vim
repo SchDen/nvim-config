@@ -1,4 +1,4 @@
-map <F1> :NERDTreeToggle<CR>
+map <leader>t :NERDTreeToggle<CR>
 nnoremap <leader>e :NERDTreeFind<CR>
 
 
