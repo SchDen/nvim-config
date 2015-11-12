@@ -39,6 +39,15 @@ For iTerm2 you can use my com.googlecode.iterm2.plist - from repository. (make d
 `$ cp ~/.config/nvim/com.googlecode.iterm2.plist ~/Library/Preferences/`
 
 Maybe you need import [color presets](https://github.com/chriskempson/base16-iterm2) for change colorsheme. ([See preview](http://chriskempson.github.io/base16))
+- For tmux - 256 colors fix
+Add to your ~/.bashrc (or e.t.c):
+```
+if [ -e /usr/share/terminfo/x/xterm-256color ]; then
+    export TERM=xterm-256color
+else
+    export TERM=screen-256color
+fi
+```
 - Run nvim and install plugins:
 
 `:PluginInstall`
