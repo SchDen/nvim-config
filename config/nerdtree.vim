@@ -9,8 +9,8 @@ let NERDTreeMouseMode=2
 " let g:nerdtree_tabs_focus_on_files=1
 " let g:nerdtree_tabs_open_on_gui_startup=0
 
-let NERDTreeWinSize=25
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeWinSize=40
+let NERDTreeIgnore = ['\.pyc$', '\.map']
 let NERDTreeMinimalUI=0
 let NERDTreeDirArrows=1
 
