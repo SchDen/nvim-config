@@ -32,6 +32,11 @@ let mapleader = " "
 
 " Отображение спецсимволов
 set list listchars=tab:⋮\ ,trail:·
+
+" FocusGained and FocusLost autocommand events are not working in terminal vim.
+" https://github.com/tmux-plugins/vim-tmux-focus-events
+set autoread
+
 "------------------------------------------------
 " /BASE SETTINGS
 "------------------------------------------------
@@ -234,6 +239,9 @@ Plugin 'heavenshell/vim-jsdoc'
 " https://github.com/scrooloose/nerdcommenter
 Plugin 'scrooloose/nerdcommenter'
 
+"--- Gained and FocusLost autocommand events are not working in terminal vim
+" Wait for https://github.com/neovim/neovim/pull/3488
+Plugin 'tmux-plugins/vim-tmux-focus-events'
 
 "--- End initialize
 call vundle#end()
