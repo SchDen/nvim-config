@@ -243,6 +243,14 @@ Plugin 'scrooloose/nerdcommenter'
 " Wait for https://github.com/neovim/neovim/pull/3488
 Plugin 'tmux-plugins/vim-tmux-focus-events'
 
+"--- UltiSnips
+" https://github.com/SirVer/ultisnips
+Plugin 'SirVer/ultisnips'
+
+"--- SnipMate
+" https://github.com/honza/vim-snippets
+Plugin 'honza/vim-snippets'
+
 "--- End initialize
 call vundle#end()
 filetype plugin indent on
@@ -269,6 +277,8 @@ source ~/.config/nvim/config/emmet-vim.vim
 source ~/.config/nvim/config/jsdoc.vim
 "--- nerdcommenter
 source ~/.config/nvim/config/nerdcommenter.vim
+"--- ultisnips
+source ~/.config/nvim/config/ultisnips.vim
 
 "------------------------------------------------
 " /PLUGIN SETTINGS
