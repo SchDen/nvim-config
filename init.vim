@@ -35,7 +35,7 @@ set autoread
 
 " Folding
 set foldenable
-set foldmethod=indent
+set foldmethod=syntax
 set foldlevelstart=10
 
 "------------------------------------------------
@@ -152,6 +152,9 @@ noremap <leader>k :bn<CR>
 "imap :!setxkbmap us:!setxkbmap us,ru
 "nmap :!setxkbmap us:!setxkbmap us,ru
 " /
+
+" JSON formating
+nmap =j :%!python -m json.tool<CR>
 
 "------------------------------------------------
 " /BASE BINDS
