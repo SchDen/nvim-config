@@ -7,11 +7,9 @@ set path=$PWD/**
 " Disable beep
 set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
-" /Disable beep
 
 " Local http://ftp.vim.org/pub/vim/runtime/spell/
 setlocal spell spelllang=ru_yo,en_us
-" /Local
 
 " Russian key
 set keymap=russian-jcukenwin
@@ -22,20 +20,23 @@ highlight lCursor guifg=NONE guibg=Cyan
 
 " Swap files
 set directory=$HOME/.config/nvim/tmp/swapfiles
-" /Swap files
 
-" Увеличение истории
-set history=200
+set history=500
 
-" Space key - <leader>
+" Set space key - <leader>
 let mapleader = " "
 
-" Отображение спецсимволов
+" Special chars
 set list listchars=tab:⋮\ ,trail:·
 
 " FocusGained and FocusLost autocommand events are not working in terminal vim.
 " https://github.com/tmux-plugins/vim-tmux-focus-events
 set autoread
+
+" Folding
+set foldenable
+set foldmethod=syntax
+set foldlevelstart=10
 
 "------------------------------------------------
 " /BASE SETTINGS
@@ -151,6 +152,9 @@ noremap <leader>k :bn<CR>
 "imap :!setxkbmap us:!setxkbmap us,ru
 "nmap :!setxkbmap us:!setxkbmap us,ru
 " /
+
+" JSON formating
+nmap =j :%!python -m json.tool<CR>
 
 "------------------------------------------------
 " /BASE BINDS
