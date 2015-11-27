@@ -266,6 +266,10 @@ Plugin 'honza/vim-snippets'
 " https://github.com/embear/vim-localvimrc
 Plugin 'embear/vim-localvimrc'
 
+"--- EditorConfig
+" https://github.com/editorconfig/editorconfig-vim
+Plugin 'editorconfig/editorconfig-vim'
+
 "--- End initialize
 call vundle#end()
 filetype plugin indent on
@@ -296,6 +300,8 @@ source ~/.config/nvim/config/nerdcommenter.vim
 source ~/.config/nvim/config/ultisnips.vim
 "--- Localvimrc
 source ~/.config/nvim/config/vim-localvimrc.vim
+"--- EditorConfig
+source ~/.config/nvim/config/editorconfig.vim
 
 "------------------------------------------------
 " /PLUGIN SETTINGS
