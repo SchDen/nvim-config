@@ -38,7 +38,7 @@ set foldlevelstart=10
 " https://github.com/tmux-plugins/vim-tmux-focus-events
 set autoread
 
-" Exit insert mode when focus is lose
+" @TODO - maybe it works? Exit insert mode when focus is lose
 function! PopOutOfInsertMode()
     if v:insertmode
         feedkeys("\<C-\>\<C-n>")
@@ -262,6 +262,10 @@ Plugin 'SirVer/ultisnips'
 " https://github.com/honza/vim-snippets
 Plugin 'honza/vim-snippets'
 
+"--- Localvimrc
+" https://github.com/embear/vim-localvimrc
+Plugin 'embear/vim-localvimrc'
+
 "--- End initialize
 call vundle#end()
 filetype plugin indent on
@@ -290,6 +294,8 @@ source ~/.config/nvim/config/jsdoc.vim
 source ~/.config/nvim/config/nerdcommenter.vim
 "--- ultisnips
 source ~/.config/nvim/config/ultisnips.vim
+"--- Localvimrc
+source ~/.config/nvim/config/vim-localvimrc.vim
 
 "------------------------------------------------
 " /PLUGIN SETTINGS
