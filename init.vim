@@ -270,6 +270,15 @@ Plugin 'embear/vim-localvimrc'
 " https://github.com/editorconfig/editorconfig-vim
 Plugin 'editorconfig/editorconfig-vim'
 
+"--- vim-javascript
+" https://github.com/pangloss/vim-javascript
+Plugin 'pangloss/vim-javascript'
+
+"-- vim-jsx
+" Install guide https://jaxbot.me/articles/setting-up-vim-for-react-js-jsx-02-03-2015
+" https://github.com/mxw/vim-jsx
+Plugin 'mxw/vim-jsx'
+
 "--- End initialize
 call vundle#end()
 filetype plugin indent on
@@ -302,6 +311,10 @@ source ~/.config/nvim/config/ultisnips.vim
 source ~/.config/nvim/config/vim-localvimrc.vim
 "--- EditorConfig
 source ~/.config/nvim/config/editorconfig.vim
+"--- vim-javascript
+source ~/.config/nvim/config/vim-javascript.vim
+"--- vim-jsx
+source ~/.config/nvim/config/vim-jsx.vim
 
 "------------------------------------------------
 " /PLUGIN SETTINGS
