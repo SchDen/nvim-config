@@ -45,6 +45,9 @@ function! PopOutOfInsertMode()
     endif
 endfunction
 autocmd FocusLost * call PopOutOfInsertMode()
+
+" Copy in system bufer
+set clipboard+=unnamedplus
 "------------------------------------------------
 " /BASE SETTINGS
 "------------------------------------------------
@@ -105,11 +108,6 @@ endif
 "------------------------------------------------
 " BASE BINDS
 "------------------------------------------------
-
-" @TODO - Copy in system bufer
-"nnoremap y "+y
-"vnoremap y "+y
-" /
 
 " Tab/Shift + tab
 vmap <Tab> >gv
