@@ -277,6 +277,11 @@ Plugin 'pangloss/vim-javascript'
 " https://github.com/mxw/vim-jsx
 Plugin 'mxw/vim-jsx'
 
+"-- vim-surround
+" https://github.com/tpope/vim-surround
+" http://code.tutsplus.com/tutorials/vim-essential-plugin-surround--net-19253
+Plugin 'tpope/vim-surround'
+
 "--- End initialize
 call vundle#end()
 filetype plugin indent on
