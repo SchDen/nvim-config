@@ -11,13 +11,6 @@ autocmd GUIEnter * set visualbell t_vb=
 " Local http://ftp.vim.org/pub/vim/runtime/spell/
 setlocal spell spelllang=ru_yo,en_us
 
-" Russian key
-set keymap=russian-jcukenwin
-set iminsert=0
-set imsearch=0
-highlight lCursor guifg=NONE guibg=Cyan
-" /Russian key
-
 " Swap files
 set directory=$HOME/.config/nvim/tmp/swapfiles
 
@@ -282,6 +275,10 @@ Plugin 'mxw/vim-jsx'
 " http://code.tutsplus.com/tutorials/vim-essential-plugin-surround--net-19253
 Plugin 'tpope/vim-surround'
 
+"-- ruscmd
+" https://github.com/powerman/vim-plugin-ruscmd
+Plugin 'powerman/vim-plugin-ruscmd'
+
 "--- End initialize
 call vundle#end()
 filetype plugin indent on
@@ -318,6 +315,7 @@ source ~/.config/nvim/config/editorconfig.vim
 source ~/.config/nvim/config/vim-javascript.vim
 "--- vim-jsx
 source ~/.config/nvim/config/vim-jsx.vim
+
 
 "------------------------------------------------
 " /PLUGIN SETTINGS
